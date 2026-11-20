@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI, all 55 PS5 trophies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <p class="kicker">UNOFFICIAL FAN GUIDE &middot; GRAND THEFT AUTO VI &middot; PLAYSTATION 5</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">Every one of the 55 official PS5 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — with a guide in our own words, a roadmap to the platinum, and a tracker that saves in your browser. Works fully offline.</p>
+    <div class="progress-wrap" id="progress-wrap">
+      <div class="progress-line"><span id="progress-text">0 / 55 earned</span><span id="progress-pct">0%</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      <p class="grade-counts" id="grade-counts">Platinum 0/1 &middot; Gold 0/2 &middot; Silver 0/6 &middot; Bronze 0/46</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="alert" id="missable-alert">
+    <strong>&#9888; ONE MISSABLE TROPHY — DO IT FIRST.</strong>
+    <span><b>Positive Mental Attitude</b> needs all 18 meditation spots, and one spot is in Chapter 1 and vanishes when Chapter 1 ends. Meditate there before you finish Chapter 1. Every other trophy can be earned after the story.</span>
+  </section>
+
+  <section class="toolbar" id="tracker">
+    <h2>Tracker</h2>
+    <div class="controls">
+      <input type="search" id="search" placeholder="Search a trophy name or guide…" aria-label="Search trophies">
+      <select id="kind-filter" aria-label="Filter by kind">
+        <option value="">All kinds</option>
+        <option value="story">Story</option>
+        <option value="side">Side quests</option>
+        <option value="collectibles">Collectibles</option>
+        <option value="activities">Activities</option>
+        <option value="secrets">Secrets</option>
+      </select>
+      <select id="grade-filter" aria-label="Filter by grade">
+        <option value="">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+      <label class="check"><input type="checkbox" id="missable-only"> Missable only</label>
+      <label class="check"><input type="checkbox" id="earned-only"> Earned only</label>
+      <label class="check"><input type="checkbox" id="spoiler-toggle"> Hide story spoilers</label>
+    </div>
+    <div class="controls">
+      <button id="export-btn" type="button">Export progress (.json)</button>
+      <button id="import-btn" type="button">Import progress</button>
+      <input type="file" id="import-file" accept=".json,application/json" hidden>
+      <button id="reset-btn" type="button">Reset tracker</button>
+      <span class="saved-note" id="saved-note">Progress saves in this browser (localStorage).</span>
+    </div>
+    <p class="filter-count" id="filter-count"></p>
+  </section>
+
+  <div class="layout">
+    <section class="list-col">
+      <ol class="trophy-list" id="trophy-list"></ol>
+    </section>
+    <aside class="detail-col" id="detail" aria-live="polite">
+      <p class="detail-empty">Select a trophy on the left to read its full guide and sources.</p>
+    </aside>
+  </div>
+
+  <section class="roadmap" id="roadmap">
+    <h2>Roadmap to the platinum</h2>
+    <p class="roadmap-intro">Four stages, in order. The roadmap is built from the official trophy descriptions: story chapters and missions first, then the heists and duo work, then the open-world grind, and finally cleanup and 100% completion.</p>
+    <div class="stages">
+      <article class="stage">
+        <h3>Stage 1 — Story</h3>
+        <p class="stage-count">Chapters 1–4 + final mission</p>
+        <p>Play the story from Gone Fishing to the final mission. Do the Chapter 1 meditation spot for <b>Positive Mental Attitude</b> before Chapter 1 ends — it is the only missable trophy. Earns: Just Like Paradise, Paradise Lost, T**s Ass Drug Money, Vice City, Baby!, Top Of The World, Ma, You Gotta Know When to Get Off, Trust, Family Matters, DWNFALL, Hi-Jacked, Snow Storm.</p>
+      </article>
+      <article class="stage">
+        <h3>Stage 2 — Heists &amp; duo work</h3>
+        <p class="stage-count">With your partner</p>
+        <p>Heists and jobs you do together: The Cartel Heist, 5 bank vaults, the armored truck, the jewelry store, one illegal operation per gang, and the duo wanted-level jobs. Earns: Break the Bank, Maximum Withdrawal, A Classic Blitz Play, Sneakthief, Pest Control, Hot Together, Retail Therapy.</p>
+      </article>
+      <article class="stage">
+        <h3>Stage 3 — Open-world grind</h3>
+        <p class="stage-count">Activities, races &amp; exploration</p>
+        <p>Try all 9 activity types, then grind the counts: 250 stunts, 42 shooting-range golds, 14 drone-race wins, 20 race wins, 8 stranger strands, 100 vehicles, 52 areas, 100 WAiNK It spots, 50 challenges, $250,000 laundered, $100,000 spent. Earns: Cunning Stunts, Master of None, The Shootist, Top Fun, Earn Cash, Not Kudos, Baited My Tackle, Stick Fiddler, Strangers &amp; Freaks, Fair Game, One Last Thing, Whip It Good, Gunslinger, Catch Me If You Can, The Goodtime State, In The Beginning…, Capital Offense, Let’s Go Bowling, Ten Pin, Dime on the Dollar, Treat Yo Self.</p>
+      </article>
+      <article class="stage">
+        <h3>Stage 4 — Cleanup &amp; 100%</h3>
+        <p class="stage-count">Collectibles &amp; contact strands</p>
+        <p>Finish the contact strands (Andy, Kenton, Billy, Randy, Tyrone), complete 3 card sets, buy all 8 garages, register 10 vehicles, and sweep up the five still-unconfirmed secret trophies. When the last trophy pops, so does the platinum — and A Long Road at 100% completion. Earns: Vice Got a Price!, A Long Road, Road to Rehabilitation, This Was No Boat Accident, The Lone Rider, Supply &amp; Demand, Spin On This!, Don’t Touch My Deck, You WAiNKer!, Little Boxes, On the Spot, plus the 5 UNCONFIRMED methods.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="sources" id="sources">
+    <h2>Sources &amp; notes</h2>
+    <ul>
+      <li>Official trophy names, descriptions and grades: the official PlayStation 5 list as reported by <b>Exophase — GTA VI trophy list</b> (also listed by PSNProfiles, agreeing on every name, description and grade).</li>
+      <li>PSN-tracked counts (250 stunts, 42 shooting-range challenges, 14 drone races, 18 meditation spots, 100 WAiNK It locations, 100 vehicles, 52 areas, 9 gangs, 8 garages, 500 choices): <b>PSNProfiles — GTA VI trophy list</b>.</li>
+      <li>Methods and order: <b>PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</b> and <b>GTA Zone — GTA 6 trophy list</b>, rewritten in our own words; each trophy names its sources beside its guide.</li>
+      <li>Five methods are marked <b>UNCONFIRMED</b> (Challenging Tank, Personal Best, Actions Speak Louder, Bad Luck, I Guess, The Truth Is Out There): no published guide has yet pinned them down, so this guide says so instead of inventing a method.</li>
+    </ul>
+    <p class="disclaimer">Unofficial fan guide. Not affiliated with, endorsed by or connected to Rockstar Games, Take-Two Interactive, Sony or PlayStation. Grand Theft Auto and GTA are trademarks of their owners. No Rockstar artwork, logos or game screenshots are used here; the look is our own. All guide text is written for this guide; sources are cited, never copied.</p>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
